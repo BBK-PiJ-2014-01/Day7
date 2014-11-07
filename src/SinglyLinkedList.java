@@ -33,10 +33,14 @@ public class SinglyLinkedList {
         patientListStart.addPatient(p10);
         // Printing out the content of each element of the list
         patientListStart.printPatientList();
+        System.out.println("Length: " + patientListStart.patientListLengthIterative());
+        System.out.println("Length: " + patientListStart.patientListLengthRecursive());
         // Removing 3 patients and checking they are not in the list anymore
         patientListStart.deletePatient(p2);
         patientListStart.deletePatient(p5);
         patientListStart.deletePatient(p9);
         patientListStart.printPatientList();
+        System.out.println("Length: " + patientListStart.patientListLengthIterative());
+        System.out.println("Length: " + patientListStart.patientListLengthRecursive());
     }
 }
