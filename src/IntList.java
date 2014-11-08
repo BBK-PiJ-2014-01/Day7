@@ -17,6 +17,21 @@ public class IntList{
             this.nextIntList.addInt(newInt);
     }
 
+    public void addIntSorted(IntList newInt) {
+        IntList tempIntList = null;
+        // if (this.nextIntList == null) {
+            if (newInt.number >= this.number) {
+                this.nextIntList = newInt;
+            } else {
+                tempIntList = this;
+                this.number = newInt.number;
+                this.nextIntList = tempIntList;
+            }
+        }
+        else
+            this.nextIntList.addIntSorted(newInt);
+    }
+
     public void printIntList() {
         System.out.print(this.number + ", ");
         if (this.nextIntList != null)

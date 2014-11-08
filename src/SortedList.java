@@ -9,8 +9,16 @@ public class SortedList {
     }
 
     public void run() {
-        int[] intArray = {1,1,2,3,5,8,13,21,34,55};
-        IntList myIntList = ListUtilities.arrayToList(intArray);
+        IntList newInt1 = new IntList(5);
+        IntList myIntList = newInt1;
+        IntList newInt2 = new IntList(3);
+        myIntList.addIntSorted(newInt2);
+        IntList newInt3 = new IntList(34);
+        myIntList.addIntSorted(newInt3);
+        IntList newInt4 = new IntList(12);
+        myIntList.addIntSorted(newInt4);
+        IntList newInt5 = new IntList(1);
+        myIntList.addIntSorted(newInt5);
         myIntList.printIntList();
         System.out.println("Length: "+myIntList.intListLength());
     }

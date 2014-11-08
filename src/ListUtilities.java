@@ -1,3 +1,5 @@
+import java.util.List;
+
 /**
  * Created by Pierre on 07/11/2014.
  */
@@ -10,5 +12,15 @@ public class ListUtilities {
             listStart.addInt(newItem);
         }
         return(listStart);
+    }
+
+    static boolean bubbleSort(IntList myIntList) {
+        int swapCounter;
+        do {
+            swapCounter = 0;
+
+        } while (swapCounter != 0);
+        long startTime = System.currentTimeMillis();
+        return(true);
     }
 }
