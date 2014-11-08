@@ -18,18 +18,19 @@ public class IntList{
     }
 
     public void addIntSorted(IntList newInt) {
-        IntList tempIntList = null;
-        // if (this.nextIntList == null) {
-            if (newInt.number >= this.number) {
+        if (newInt.number >= this.number) {
+            if (this.nextIntList == null)
                 this.nextIntList = newInt;
-            } else {
-                tempIntList = this;
-                this.number = newInt.number;
-                this.nextIntList = tempIntList;
-            }
+            else
+                this.nextIntList.addIntSorted(newInt);
+        } else {
+            int tempInt = this.number;
+            IntList tempIntList = this.nextIntList;
+            this.number = newInt.number;
+            newInt.number = tempInt;
+            this.nextIntList = newInt;
+            newInt.nextIntList = tempIntList;
         }
-        else
-            this.nextIntList.addIntSorted(newInt);
     }
 
     public void printIntList() {
