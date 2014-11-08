@@ -14,8 +14,10 @@ public class PatientDL {
     }
 
     public void addPatient(PatientDL newPatient) {
-        if (this.nextPatient == null)
+        if (this.nextPatient == null) {
             this.nextPatient = newPatient;
+            newPatient.previousPatient = this;
+        }
         else
             this.nextPatient.addPatient(newPatient);
     }
@@ -26,6 +28,7 @@ public class PatientDL {
         else
         if (this.nextPatient.name.equals(oldPatient.name)){
             this.nextPatient = nextPatient.nextPatient;
+            this.nextPatient.previousPatient = this;
             return(true);
         } else
             return(this.nextPatient.deletePatient(oldPatient));

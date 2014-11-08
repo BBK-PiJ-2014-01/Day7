@@ -33,6 +33,18 @@ public class IntList{
         }
     }
 
+    public boolean swap() {
+        boolean swapCount = false;
+        if (this.nextIntList != null)
+            if (this.number > this.nextIntList.number) {
+                int tempNumber = this.number;
+                this.number = this.nextIntList.number;
+                this.nextIntList.number = tempNumber;
+                this.nextIntList.swap();
+            }
+        return(swapCount);
+    }
+
     public void printIntList() {
         System.out.print(this.number + ", ");
         if (this.nextIntList != null)

@@ -1,13 +1,15 @@
 Day7
 ====
 Exercise 1:
-  - Spy class implemented - Code complete
+  - Spy (main) class implemented - Code complete
 Exercise 2:
-  - Marks class implemented - Code complete
+  - Marks (main) class implemented - Code complete
 Exercise 3:
-  - SinglyLinkedList class implemented - Code complete
+  - Patient & SinglyLinkedList (main) classes implemented - Code complete
 Exercise 4:
   - Queue length methods implemented in Patient class (both iterative and recursive)
 Exercise 9:
-  - IntList & ArrayToList classes implemented - Code complete
+  - IntList & ArrayToList (main) classes implemented - Code complete
   - Static method ArrayToList implemented in ListUtilities class - Code complete
+Exercise 10:
+  - AddIntSorted method & SortedList (main) classes implemented - Code complete

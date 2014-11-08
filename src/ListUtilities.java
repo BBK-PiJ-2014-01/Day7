@@ -14,13 +14,15 @@ public class ListUtilities {
         return(listStart);
     }
 
-    static boolean bubbleSort(IntList myIntList) {
-        int swapCounter;
+    static long bubbleSort(IntList myIntList) {
+        long startTime = System.currentTimeMillis();
+        int swapCounter = 0;
+        IntList tempInt = myIntList;
         do {
-            swapCounter = 0;
+            while (myIntList.nextIntList != null)
 
         } while (swapCounter != 0);
-        long startTime = System.currentTimeMillis();
-        return(true);
+        long stopTime = System.currentTimeMillis();
+        return(stopTime-startTime);
     }
 }
