@@ -34,7 +34,15 @@ public class PatientDL {
             return(this.nextPatient.deletePatient(oldPatient));
     }
 
-    public void printPatientList() {
+    public void printPatientListFW() {
+        System.out.println("Name: " + this.name + " Age: " + this.age + " Illness: " + this.illness);
+        if (this.nextPatient != null)
+            this.nextPatient.printPatientList();
+        else
+            System.out.println("END OF LIST");
+    }
+
+    public void printPatientListBW() {
         System.out.println("Name: " + this.name + " Age: " + this.age + " Illness: " + this.illness);
         if (this.nextPatient != null)
             this.nextPatient.printPatientList();
