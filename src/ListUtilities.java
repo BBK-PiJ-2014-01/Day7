@@ -5,19 +5,19 @@ import java.util.List;
  */
 public class ListUtilities {
 
-    static public IntList arrayToList(int[] intArray){
-        IntList listStart = new IntList(intArray[0]);
+    static public IntInList arrayToList(int[] intArray){
+        IntInList listStart = new IntInList(intArray[0]);
         for (int i = 1; i < intArray.length; i++) {
-            IntList newItem = new IntList(intArray[i]);
+            IntInList newItem = new IntInList(intArray[i]);
             listStart.addInt(newItem);
         }
         return(listStart);
     }
-
-    static long bubbleSort(IntList myIntList) {
+/*
+    static long bubbleSort(IntInList myIntList) {
         long startTime = System.currentTimeMillis();
         int swapCounter = 0;
-        IntList tempInt = myIntList;
+        IntInList tempInt = myIntList;
         do {
             while (myIntList.nextIntList != null)
 
@@ -25,4 +25,5 @@ public class ListUtilities {
         long stopTime = System.currentTimeMillis();
         return(stopTime-startTime);
     }
+*/
 }

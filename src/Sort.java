@@ -9,7 +9,7 @@ public class Sort {
 
     public void run() {
         int[] intArray = {55,1,2,21,5,8,13,60,34,1};
-        IntList myIntList = ListUtilities.arrayToList(intArray);
+        IntInList myIntList = ListUtilities.arrayToList(intArray);
         myIntList.printIntList();
         // ListUtilities.bubbleSort(myIntList);
         myIntList.printIntList();

@@ -10,7 +10,7 @@ public class ArrayToList {
 
     public void run() {
         int[] intArray = {1,1,2,3,5,8,13,21,34,55};
-        IntList myIntList = ListUtilities.arrayToList(intArray);
+        IntInList myIntList = ListUtilities.arrayToList(intArray);
         myIntList.printIntList();
         System.out.println("Length: "+myIntList.intListLength());
     }
