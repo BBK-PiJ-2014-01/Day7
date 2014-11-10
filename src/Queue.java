@@ -3,30 +3,26 @@
  */
 public class Queue {
     private IntInList headQueue;
-    private IntInList tailQueue;
 
     public Queue() {
         this.headQueue = null;
-        this.tailQueue = null;
     }
 
     public void insert(IntInList newInt) {
-        // int tempInt = this.headQueue.getNumber();
-        if (this.headQueue == null) {
+        if (this.headQueue == null)
             this.headQueue = newInt;
-            this.tailQueue = newInt;
-        } else {
-            IntInList tempIntInList = this.headQueue.getNextIntInList();
-            this.headQueue = newInt;
-            // newInt.number = tempInt;
-            // this.nextIntInList = newInt;
-            newInt.setNextIntInList(tempIntInList);
+        else {
+            if (this.headQueue.getNextIntInList() == null)
+                this.headQueue.setNextIntInList(newInt);
+            else
+                this.headQueue.getNextIntInList().addInt(newInt);
         }
     }
 
     public IntInList retrieve() {
-        IntInList lastIntInList = null;
-        return(lastIntInList);
+        IntInList oldestIntInList = this.headQueue;
+        this.headQueue = this.headQueue.getNextIntInList();
+        return(oldestIntInList);
     }
 
     public int size() {
