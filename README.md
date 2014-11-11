@@ -10,6 +10,8 @@ Exercise 4:
   - Queue length methods implemented in Patient class (both iterative and recursive)
 Exercise 7:
   - Queue & QueueTest (main) classes implemented - Code complete
+Exercise 8:
+  - Stack & StackTest (main) classes implemented - Code complete
 Exercise 9:
   - IntList & ArrayToList (main) classes implemented - Code complete
   - Static method ArrayToList implemented in ListUtilities class - Code complete
