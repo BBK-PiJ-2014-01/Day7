@@ -21,8 +21,9 @@ public class DoublyLinkedList {
         patientListStart.addPatient(p4);
         PatientDL p5 = new PatientDL("Bill",18,"Flu");
         patientListStart.addPatient(p5);
-        PatientDL p6 = new PatientDL("Jessica",28,"Flu");
-        patientListStart.addPatient(p6);
+        // Checking the list still adds the patient, by just assigning a new value to p5
+        p5 = new PatientDL("Jessica",28,"Flu");
+        patientListStart.addPatient(p5);
         PatientDL p7 = new PatientDL("David",47,"Cold");
         patientListStart.addPatient(p7);
         PatientDL p8 = new PatientDL("Greg",62,"Flu");
@@ -44,5 +45,9 @@ public class DoublyLinkedList {
         patientListStart.printPatientList();
         System.out.println("Length: " + patientListStart.patientListLengthIterative());
         System.out.println("Length: " + patientListStart.patientListLengthRecursive());
+        PatientDL p11 = new PatientDL("Brad",43,"Cold");
+        patientListStart.addPatient(p11);
+        patientListStart.deletePatient(p5);
+        patientListStart.printPatientList();
     }
 }
