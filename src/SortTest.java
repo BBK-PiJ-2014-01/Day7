@@ -23,25 +23,13 @@ public class SortTest {
         long timeToBubbleSort = ListUtilities.bubbleSort(myIntList1);
         System.out.println("Time to sort with BubbleSort: "+timeToBubbleSort);
         myIntList1.printIntList();
-/*
-        IntInListDL myIntList1N = ListUtilities.arrayToListDL(intArray);
-        myIntList1N.printIntList();
-        long timeToBubbleSort2 = ListUtilities.bubbleSort(myIntList1N);
-        System.out.println("Time to sort with BubbleSort: "+timeToBubbleSort2);
-        myIntList1N.printIntList();
-*/
+
         IntInListDL myIntList2 = ListUtilities.arrayToListDL(intArray);
         myIntList2.printIntList();
         long timeToCocktailSort = ListUtilities.cocktailSort(myIntList2);
         System.out.println("Time to sort with CocktailSort: "+timeToCocktailSort);
         myIntList2.printIntList();
 /*
-        IntInListDL myIntList2N = ListUtilities.arrayToListDL(intArray);
-        myIntList2N.printIntList();
-        long timeToCocktailSort2 = ListUtilities.cocktailSort(myIntList2N);
-        System.out.println("Time to sort with CocktailSort: "+timeToCocktailSort2);
-        myIntList2N.printIntList();
-
         IntInList myIntList3 = ListUtilities.arrayToList(intArray3);
         myIntList3.printIntList();
         long timeToQuickSort = ListUtilities.QuickSort(myIntList3);
