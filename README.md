@@ -16,4 +16,6 @@ Exercise 9:
   - IntList & ArrayToList (main) classes implemented - Code complete
   - Static method ArrayToList implemented in ListUtilities class - Code complete
 Exercise 10:
-  - AddIntSorted method & SortedList (main) classes implemented - Code complete
+  - addIntSorted method & SortedList (main) class implemented - Code complete
+Exercise 11:
+  - bubbleSort method & SortTest (main) implemented - Code complete
