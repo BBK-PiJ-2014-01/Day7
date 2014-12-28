@@ -23,6 +23,10 @@ public class IntInList {
         this.nextIntInList = intInList;
     }
 
+    public void setNumber(int number) {
+        this.number = number;
+    }
+
     public void addInt(IntInList newInt) {
         if (this.nextIntInList == null)
             this.nextIntInList = newInt;
@@ -45,19 +49,7 @@ public class IntInList {
             newInt.nextIntInList = tempIntInList;
         }
     }
-/*
-    public boolean swap() {
-        boolean swapCount = false;
-        if (this.nextIntInList != null)
-            if (this.number > this.nextIntInList.number) {
-                int tempNumber = this.number;
-                this.number = this.nextIntInList.number;
-                this.nextIntInList.number = tempNumber;
-                this.nextIntInList.swap();
-            }
-        return(swapCount);
-    }
-*/
+
     public void printIntList() {
         System.out.print(this.number + ", ");
         if (this.nextIntInList != null)
